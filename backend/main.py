@@ -31,19 +31,19 @@ def stats():
     }
     return stats
 
-@app.get("/predict/")
-def predict(kecamatan: str = Query(...), steps: int = Query(12)):
-    # Filter data by kecamatan
-    filtered_df = dbd_data[dbd_data['bps_nama_kecamatan'] == kecamatan].sort_values('tahun')
-    if filtered_df.empty:
-        return {"error": f"No data found for kecamatan: {kecamatan}"}
+# @app.get("/predict/")
+# def predict(kecamatan: str = Query(...), steps: int = Query(12)):
+#     # Filter data by kecamatan
+#     filtered_df = dbd_data[dbd_data['bps_nama_kecamatan'] == kecamatan].sort_values('tahun')
+#     if filtered_df.empty:
+#         return {"error": f"No data found for kecamatan: {kecamatan}"}
 
-    # Train ARIMA model
-    model = ARIMA(filtered_df['total_kasus'], order=(1, 1, 1))
-    result = model.fit()
+#     # Train ARIMA model
+#     model = ARIMA(filtered_df['total_kasus'], order=(1, 1, 1))
+#     result = model.fit()
 
-    # Generate predictions
-    forecast = result.forecast(steps=steps)
-    predicted_values = forecast.tolist()
+#     # Generate predictions
+#     forecast = result.forecast(steps=steps)
+#     predicted_values = forecast.tolist()
 
-    return {"kecamatan": kecamatan, "predictions": predicted_values}
+#     return {"kecamatan": kecamatan, "predictions": predicted_values}
