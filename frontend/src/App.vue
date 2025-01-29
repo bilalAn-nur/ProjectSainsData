@@ -4,7 +4,7 @@
       <div
         class="container mx-auto px-4 flex items-center justify-between py-4"
       >
-        <h1 class="text-2xl font-bold">Aplikasi Si Paling Sehat</h1>
+        <h1 class="text-2xl font-bold">DBD Dashboard</h1>
         <nav class="hidden md:block">
           <ul class="flex space-x-6">
             <li>
@@ -13,18 +13,13 @@
               >
             </li>
             <li>
-              <router-link to="/analysis" class="hover:underline"
-                >Analysis</router-link
+              <router-link to="/toprank" class="hover:underline"
+                >Top Rank</router-link
               >
             </li>
             <li>
-              <router-link to="/manage-data" class="hover:underline"
-                >Manajemen Data</router-link
-              >
-            </li>
-            <li>
-              <router-link to="/education" class="hover:underline"
-                >Edukasi</router-link
+              <router-link to="/penyebaran" class="hover:underline"
+                >Penyebaran</router-link
               >
             </li>
           </ul>

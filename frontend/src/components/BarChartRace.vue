@@ -114,7 +114,7 @@ export default {
           this.currentYear++;
           this.updateChart();
         }
-      }, 1000);
+      }, 1500);
     },
     pauseAnimation() {
       clearInterval(this.timer);
@@ -130,16 +130,7 @@ export default {
       }
     },
     resetChart() {
-      this.pauseAnimation(); // Hentikan animasi
-      this.currentYear = this.startYear; // Reset tahun ke awal
-
-      // Hancurkan chart lama
-      if (this.chart) {
-        this.chart.destroy();
-      }
-
-      // Buat ulang chart dengan tahun awal
-      this.createChart();
+      location.reload();
     },
   },
 };

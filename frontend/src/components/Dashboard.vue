@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h1>Highcharts Bar Chart Race</h1>
+    <h1>Highcharts Bar Chart Race Kota Bandung</h1>
     <BarRaceChart />
   </div>
 </template>
