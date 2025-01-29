@@ -39,11 +39,12 @@
               class="w-24 h-40 flex items-end justify-center rounded-t-md shadow-md"
               style="background-color: #ffff00"
             >
-              <div class="text-center mt-2">
-                <span class="font-medium">{{ rankings[1].kecamatan }}</span
-                ><br />
-                <span class="text-gray-600">{{ rankings[1].total }} Orang</span>
-              </div>
+              #2
+            </div>
+            <div class="text-center mt-2">
+              <span class="font-medium">{{ rankings[1].kecamatan }}</span
+              ><br />
+              <span class="text-gray-600">{{ rankings[1].total }} Orang</span>
             </div>
           </div>
 
@@ -53,13 +54,12 @@
               class="w-28 h-48 flex items-end justify-center rounded-t-md shadow-md"
               style="background-color: #ff0000"
             >
-              <div class="text-center mt-2">
-                <span class="font-medium text-white">{{
-                  rankings[0].kecamatan
-                }}</span
-                ><br />
-                <span class="text-white">{{ rankings[0].total }} Orang</span>
-              </div>
+              #1
+            </div>
+            <div class="text-center mt-2">
+              <span class="font-medium">{{ rankings[0].kecamatan }}</span
+              ><br />
+              <span class="text-gray-600">{{ rankings[0].total }} Orang</span>
             </div>
           </div>
 
@@ -69,11 +69,12 @@
               class="w-24 h-32 flex items-end justify-center rounded-t-md shadow-md"
               style="background-color: #00ff00"
             >
-              <div class="text-center mt-2">
-                <span class="font-medium">{{ rankings[2].kecamatan }}</span
-                ><br />
-                <span class="text-gray-600">{{ rankings[2].total }} Orang</span>
-              </div>
+              #3
+            </div>
+            <div class="text-center mt-2">
+              <span class="font-medium">{{ rankings[2].kecamatan }}</span
+              ><br />
+              <span class="text-gray-600">{{ rankings[2].total }} Orang</span>
             </div>
           </div>
         </div>
