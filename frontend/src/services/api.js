@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "http://127.0.0.1:8000";
+const BASE_URL = "https://project-sains-data-backend.vercel.app";
 
 export const getData = async () => {
   const response = await axios.get(`${BASE_URL}/data/`);

@@ -54,7 +54,9 @@ export default {
   },
   async mounted() {
     this.initMap();
-    const response = await fetch(`http://127.0.0.1:8000/data/`);
+    const response = await fetch(
+      `https://project-sains-data-backend.vercel.app/data/`
+    );
     const data = await response.json();
 
     if (data.length > 0) {
@@ -80,7 +82,7 @@ export default {
           fetch(
             "/geojson-bandung-master/3273-kota-bandung-level-kecamatan.json"
           ),
-          fetch(`http://127.0.0.1:8000/data/`),
+          fetch(`https://project-sains-data-backend.vercel.app/data/`),
         ]);
 
         const geojsonData = await geojsonResponse.json();

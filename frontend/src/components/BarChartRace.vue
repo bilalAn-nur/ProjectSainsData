@@ -32,7 +32,9 @@ export default {
   },
   methods: {
     async fetchData() {
-      const response = await fetch("http://127.0.0.1:8000/data/");
+      const response = await fetch(
+        "https://project-sains-data-backend.vercel.app/data/"
+      );
       const data = await response.json();
 
       // Format data menjadi objek berdasarkan tahun

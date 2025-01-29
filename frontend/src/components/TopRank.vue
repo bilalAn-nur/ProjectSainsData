@@ -93,7 +93,9 @@ export default {
   },
   async mounted() {
     // Ambil data tahun dari API
-    const response = await fetch("http://127.0.0.1:8000/data/");
+    const response = await fetch(
+      "https://project-sains-data-backend.vercel.app/data/"
+    );
     const data = await response.json();
     this.availableYears = [...new Set(data.map((item) => item.tahun))].sort();
   },
@@ -101,7 +103,7 @@ export default {
     async fetchData() {
       try {
         const response = await fetch(
-          `http://127.0.0.1:8000/data/?tahun=${this.selectedYear}`
+          `https://project-sains-data-backend.vercel.app/data/?tahun=${this.selectedYear}`
         );
         const data = await response.json();
 
